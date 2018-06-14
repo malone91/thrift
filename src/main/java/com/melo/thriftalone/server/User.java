@@ -1,4 +1,4 @@
-package com.melo.thrift.server;
+package com.melo.thriftalone.server;
 
 import com.facebook.swift.codec.ThriftField;
 import com.facebook.swift.codec.ThriftStruct;

@@ -1,9 +1,9 @@
-package com.melo.thrift.client;
+package com.melo.thriftalone.client;
 
 import com.facebook.nifty.client.FramedClientConnector;
 import com.facebook.swift.service.ThriftClientManager;
-import com.melo.thrift.server.HelloService;
-import com.melo.thrift.server.User;
+import com.melo.thriftalone.server.HelloService;
+import com.melo.thriftalone.server.User;
 
 import java.net.InetSocketAddress;
 import java.util.concurrent.ExecutionException;
