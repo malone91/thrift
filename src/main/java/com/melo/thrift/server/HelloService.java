@@ -14,7 +14,7 @@ public interface HelloService {
 
     /**
      *
-     * @param User
+     * @param user
      * @return
      */
     @ThriftMethod
