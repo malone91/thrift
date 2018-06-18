@@ -1,5 +1,6 @@
 package com.melo.starter;
 
+import com.melo.thriftteam.invoke.SimpleInvoker;
 import com.melo.thriftteam.server.ThriftServer;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -12,15 +13,17 @@ import org.springframework.context.ApplicationContext;
  * @author Ablert
  */
 @SpringBootApplication
-public class SpringbootApplication {
+public class ThriftApplication {
 
     private static ThriftServer thriftServer;
 
     public static void main(String[] args) {
-        ApplicationContext applicationContext = SpringApplication.run(SpringbootApplication.class, args);
-        thriftServer = applicationContext.getBean(ThriftServer.class);
-        if (thriftServer != null) {
-            thriftServer.init();
+        ApplicationContext context = SpringApplication.run(ThriftApplication.class, args);
+        try {
+            SimpleInvoker simpleInvoker = new SimpleInvoker();
+            simpleInvoker.startServer();
+        } catch (Exception e) {
+            e.printStackTrace();
         }
     }
 }
