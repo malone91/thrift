@@ -1,4 +1,4 @@
-package com.melo.thriftteam.server;
+package com.melo.starter;
 
 import com.melo.thriftteam.invoke.SimpleInvoker;
 import org.apache.thrift.transport.TTransportException;
