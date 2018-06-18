@@ -20,7 +20,7 @@ import org.apache.thrift.transport.TTransportException;
 public class SimpleInvoker {
 
     /**
-     * 启动服务
+     * 简单的启动服务启动服务
      * @throws TTransportException
      */
     public void startServer() throws TTransportException {
@@ -48,7 +48,7 @@ public class SimpleInvoker {
      */
     public void startClient() throws TException {
         String ip = "127.0.0.1";
-        int port = 8091;
+        int port = 6666;
         int timeOut = 1000;
         //创建transport
         TTransport transport = new TSocket(ip, port, timeOut);
