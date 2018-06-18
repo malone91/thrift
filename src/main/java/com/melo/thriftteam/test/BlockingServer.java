@@ -6,7 +6,9 @@ import org.apache.thrift.TException;
 import java.util.concurrent.TimeUnit;
 
 /**
- * Created by 76009 on 2018/6/14.
+ * 该类主要用于
+ * @author 76009
+ * @date 2018/6/14
  */
 public class BlockingServer {
 
